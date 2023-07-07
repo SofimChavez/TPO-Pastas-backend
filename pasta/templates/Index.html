@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <header>
+        {% include 'snippets/header.html' %}
+        <div class="container">
+            <div class="texto"><h1>Italian Restaurant</h1></div>
+            <img class="item" src="{% static './img/pasta1.jpg'%}" alt="">
+            <img class="item" src="{% static './img/raviolis.jpg'%}" alt="">
+            <img class="item" src="{% static './img/pasta2.jpg'%}" alt="">
+            <img class="item" src="{% static './img/psata3.jpg'%}" alt="">
+        </div>
+    </header>
+    <main>
+        <div class="restaurante">
+            <img class="item" src="{% static './img/restaurante1.png'%}" alt="">
+            <img class="item" src="{% static './img/restaurante2.jpg'%}" alt="">
+            <img class="item" src="{% static './img/restaurante4.jpg'%}" alt="">
+        </div>
+    </main>
+{% endblock content %}
+

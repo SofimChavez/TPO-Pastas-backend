@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<body>
+    {% include 'snippets/header.html' %}
+    <main>
+        <div class="contenedor">
+            <section class="contenido-main">
+                <section class="textos-main">
+                    <h3 class="parr-history">Somos un restaurante de comida italiana, fundado en 1946 por nuestros antepasados que vinieron a Argentina durante la primera guerra mundial y fundaron este restaurante para transmitir un poco de la deliciosa comida italiana</h3>
+                </section>
+                <img src="{% static 'img/italian-restaurant.jpg'%}" alt="">
+            </section>
+        </div>
+    </main>
+    {% endblock content %}
